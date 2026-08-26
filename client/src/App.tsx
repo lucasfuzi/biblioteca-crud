@@ -1,3 +1,4 @@
+/* Direção visual: Arquivo Editorial — shell de acervo com papel marfim, tinta azul-marinho, Coral de Lombada e interação precisa. */
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
