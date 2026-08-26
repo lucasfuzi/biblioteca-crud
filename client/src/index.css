@@ -196,7 +196,9 @@ h1 em, h2 i { color: var(--coral); font-style: italic; }
 .note-mark { margin-top: 19px; color: var(--coral); font-family: Georgia, serif; font-size: 72px; line-height: 0.5; }
 .panel--note blockquote { position: relative; z-index: 1; max-width: 245px; margin-top: 16px; color: var(--ink); font-family: 'DM Serif Display', serif; font-size: 24px; line-height: 1.04; letter-spacing: -0.025em; }
 .note-footer { display: flex; align-items: end; justify-content: space-between; gap: 15px; margin-top: auto; color: #8b8e87; font-size: 9px; font-weight: 800; }
-.note-footer img { width: 73px; height: 52px; object-fit: cover; filter: saturate(0.7); }
+.note-footer img, .note-thumb { width: 73px; height: 52px; object-fit: cover; }
+.note-footer img { filter: saturate(0.7); }
+.note-thumb--fallback { display: grid; place-items: center; border: 1px solid #d3c5b4; background: repeating-linear-gradient(90deg, #ece0d0 0 12px, #f8f0e4 12px 20px); color: var(--coral-deep); font-size: 8px; font-weight: 800; letter-spacing: 0.12em; line-height: 1.4; text-align: center; }
 
 .records-page { animation: page-in 280ms var(--ease-out) both; }
 @keyframes page-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }

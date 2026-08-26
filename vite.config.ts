@@ -206,6 +206,8 @@ function vitePluginStorageProxy(): Plugin {
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()];
 
 export default defineConfig({
+  // GitHub Pages publica este projeto dentro de /biblioteca-crud/.
+  base: process.env.VITE_BASE_PATH || "/",
   plugins,
   resolve: {
     alias: {
